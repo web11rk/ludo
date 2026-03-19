@@ -20,7 +20,7 @@ const bucketName = 'ludo-logs';
 
 const storage = new Storage({
     projectId: 'prj-r11-fs-prd-1',
-    keyFilename: './config/googleCredBucket.json',
+    keyFilename: '',
 });
 
 
