@@ -1,6 +1,6 @@
 import { AI_AGENTS_LEARNINIG_CONSTS, GLOBALPARAMS, qTable } from '../common/gameConstants.js';
 import { GetOpponentsTokensPositions, GetPlayerInRoom, GetPlayerMovableTokens, GetPlayerTokenStatusArray, GetPlayerVariable, GetRoomVariable, GetTokenFromPlayer } from '../common/room.js';
-import * as tf from '@tensorflow/tfjs';
+//import * as tf from '@tensorflow/tfjs';
 import { CanKillToken } from './killManager.js';
 import { SendAutoPlayDiceRollData } from '../listenersAndEmitters/emitters.js';
 import { DiceRollActions } from './DiceRollManager.js';
