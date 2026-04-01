@@ -1,5 +1,5 @@
 import * as dotenv from 'dotenv'
-import * as tf from '@tensorflow/tfjs';
+// import * as tf from '@tensorflow/tfjs';
 dotenv.config()
 
 export const LISTENS = {
@@ -142,7 +142,7 @@ export const AI_AGENTS_LEARNINIG_CONSTS =
     },
 };
 
-export const qTable = tf.variable(tf.randomNormal([AI_AGENTS_LEARNINIG_CONSTS.totalStates, AI_AGENTS_LEARNINIG_CONSTS.totalActions]));
+export const qTable = []//tf.variable(tf.randomNormal([AI_AGENTS_LEARNINIG_CONSTS.totalStates, AI_AGENTS_LEARNINIG_CONSTS.totalActions]));
 
 export const LUDO_ROOM = "ludoRoom"+`${process.env.PORT}`
 
