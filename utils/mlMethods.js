@@ -1,4 +1,4 @@
-import * as tf from '@tensorflow/tfjs';
+//import * as tf from '@tensorflow/tfjs';
 import { AI_AGENTS_LEARNINIG_CONSTS, qTable } from '../common/gameConstants.js';
 
 export async function GetAgentAction(state, actions) 
