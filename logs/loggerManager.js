@@ -188,20 +188,20 @@ async function appendToFile(bucketName, fileName, content) {
 // const newLogs = 'New log entry 1\nNew log entry 2\n';
 
 export const WriteToLogInRedis = async (message,roomID,isHeading) => {
-    const messageData = { logs: message };
-    if (isHeading) {
-        messageData.additional_info = ' '.repeat(5)+'~~~~~~~~~~~~~~~~~~~~~~~~';
-    }
-    const key = `logs-${roomID}`
-    await redisLogs.SADD('LudoRoomList',key)
-    await redisLogs.XADD(key, '*' ,messageData, function(err, reply) {
-        if(err) {
-            console.error('Error while Xadd using in redis:', err);
-        } else {
-            //  GLOBALPARAMS.isLogs && console.log('Reply:', reply);
-        }
-    })
-    await redisLogs.expire(key,GLOBALPARAMS.TtlTimeForSevenDays)
+    // const messageData = { logs: message };
+    // if (isHeading) {
+    //     messageData.additional_info = ' '.repeat(5)+'~~~~~~~~~~~~~~~~~~~~~~~~';
+    // }
+    // const key = `logs-${roomID}`
+    // await redisLogs.SADD('LudoRoomList',key)
+    // await redisLogs.XADD(key, '*' ,messageData, function(err, reply) {
+    //     if(err) {
+    //         console.error('Error while Xadd using in redis:', err);
+    //     } else {
+    //         //  GLOBALPARAMS.isLogs && console.log('Reply:', reply);
+    //     }
+    // })
+    // await redisLogs.expire(key,GLOBALPARAMS.TtlTimeForSevenDays)
 }
 
 
