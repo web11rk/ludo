@@ -12,7 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "@google-cloud/storage": "^7.7.0",
-    "@tensorflow/tfjs": "^4.17.0",
     "axios": "^1.4.0",
     "crypto": "^1.0.1",
     "date-fns": "^2.30.0",
